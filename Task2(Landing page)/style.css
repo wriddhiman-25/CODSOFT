@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Josefin Sans", sans-serif;
+}
+body{
+    color: #ebf2f6;
+    min-height: 100vh;
+    align-items: center;
+    overflow: hidden;
+}
+.header{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 5%;
+  background: rgba(4, 4, 4, 0.256);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color:#fdfcfc;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 18px;
+    color: #ffffffe0;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color: rgb(45, 145, 203);
+}
+.home{
+    height: 100vh;
+    background: url('Messi.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    line-height: 1.5;
+    
+}
+.home-content{
+  margin: auto;
+    width: auto;
+    overflow: hidden;
+}
+
+.home-content .text{
+  position:relative;
+  display: inline-flex;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.815);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.home-content .text.first-text{
+  color: #ffffff;
+  word-spacing: 10px;
+  margin-right: 33px;
+}
+.text.sec-text{
+  color: #0996e8;
+}
+.text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-left: 2px solid #0996e8;
+  animation: animate 4s steps(31) infinite;
+}
+@keyframes animate{
+  40%, 60%{
+    left: calc(100% + 4px);
+  }
+  100%{
+    left:0%
+  }
+}
+.home-sci{
+  position: absolute;
+  bottom: 90px;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-box a{
+  position:relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 140px;
+  height: 50px;
+  background:#065a8a;
+  border: 2px solid #0d91dd;
+  border-radius: 8px;
+  font-size: 19px ;
+  margin-top: 80px;
+  text-decoration: none;
+  color: #bfc6ca;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  left: 30%;
+  right: 30%;
+}
+.btn-box a:nth-child(2){
+  background: transparent;
+}
+.btn-box a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #065a8a;
+  z-index: -1;
+  transition: .5s;
+}
+.btn-box a:hover::before{
+  width: 100%;
+}
+.explore-header{
+  align-items: center;
+  color: #065a8a;
+}
+.about{
+  position:absolute;
+  font-size: 17px;
+  margin-top: 400px;
+  padding: 35px;
+  background: #00000041;
+  border-left: 8px solid #0996e8;
+  left:0%;
+  right:0%;
+}

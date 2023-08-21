@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Sports Hub.</a>
+        <nav class="navbar">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#products">PRODUCTS</a>
+            <a href="#contact">CONTACT US</a>
+        </nav>
+    </header>
+    <section id="home" class="home" >
+    
+        <div class="home-content">
+            <span class="text first-text">Get Your Favourite</span>
+            <span class="text sec-text"> </span>
+            <script>
+                const text=document.querySelector(".sec-text");
+
+                const textLoad = () => {
+                    setTimeout(() =>{
+                       text.textContent=  "Jerseys" ;
+                    },0);
+                    setTimeout(() =>{
+                       text.textContent="Shoes";
+                    },4000);
+                    setTimeout(() =>{
+                       text.textContent=  "Track Pants" ;
+                    },8000);
+                }
+
+                textLoad();
+                setInterval(textLoad,12000);
+            </script>
+            
+         <div class="btn-box">
+          <a href="#explore">Explore</a>
+          <a href="#shop">Shop Now</a>
+         </div>
+        </div>
+        <p class="about">Welcome to our Sports Jersey Shop, your ultimate destination for premium sports apparel and fan gear! At our online store, we are passionate about bringing you the finest selection of authentic sports jerseys, merchandise, and accessories to support your favorite teams and athletes. Whether you're a die-hard fan, a casual supporter, or an avid collector, we have something special for everyone.</p>
+    </section>
+    </body>
+    </html>
+  
